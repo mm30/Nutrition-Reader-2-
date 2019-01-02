@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.michael.nutritionreader.MainActivity">
+
+<!--
+
+    <ImageView
+        android:id="@+id/logo"
+        android:src="@drawable/logo"
+        android:layout_width="match_parent"
+        android:layout_marginTop="50dp"
+        android:paddingLeft="10dp"
+        android:paddingStart="10dp"
+        android:paddingRight="10dp"
+        android:paddingEnd="10dp"
+        android:layout_height="110dp" />
+
+-->
+
+    <TextView
+        android:id="@+id/logo"
+        android:text="Nutrition Label Scanner"
+        android:gravity="center"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:fontFamily="@font/helvetica"
+        android:textColor="@android:color/black"
+        android:layout_width="match_parent"
+        android:layout_marginTop="50dp"
+        android:paddingLeft="10dp"
+        android:paddingStart="10dp"
+        android:paddingRight="10dp"
+        android:paddingEnd="10dp"
+        android:layout_height="110dp" />
+
+
+
+    <View
+        android:id="@+id/initialView"
+        android:layout_below="@id/logo"
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="-10dp"
+        android:paddingRight="-10dp"
+        android:layout_marginLeft="-10dp"
+        android:layout_marginRight="-10dp"
+        android:layout_height="2dp"
+        android:background="@color/colorPrimary"
+        />
+
+
+    <TextView
+        android:id="@+id/instructions"
+        android:textColor="@android:color/black"
+        android:layout_margin="10dp"
+        android:fontFamily="@font/helvetica"
+        android:layout_below="@id/initialView"
+        android:text="@string/take_photo_instructions"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+
+    <TextView
+        android:id="@+id/chooseHeading"
+        android:layout_below="@id/instructions"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="20dp"
+        android:text="Choose your option"
+        android:textSize="22sp"
+        android:paddingLeft="10dp"
+        android:paddingStart="10dp"
+        android:paddingRight="10dp"
+        android:paddingEnd="10dp"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimary"
+        android:fontFamily="cursive"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+   <!-- <View
+        android:id="@+id/view"
+        android:layout_below="@+id/chooseHeading"
+        android:layout_width="match_parent"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="150dp"
+        android:layout_height="1dp"
+        android:background="@android:color/black"
+        />-->
+
+
+    <Button
+        android:id="@+id/takePhotoButton"
+        android:text="Take Photo"
+        android:layout_below="@+id/chooseHeading"
+        android:onClick="onTakePhotoClick"
+        android:textAllCaps="false"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+
+        <ImageView
+            android:id="@+id/or"
+            android:src="@drawable/or"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_below="@id/takePhotoButton"
+            android:layout_centerHorizontal="true"
+            android:layout_height="40dp"
+            android:layout_width="40dp" />
+
+
+
+    <Button
+        android:id="@+id/gallery"
+        android:layout_below="@id/or"
+        android:textAllCaps="false"
+        android:onClick="importFromGallery"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:text="Import photo from Gallery"
+        android:layout_width="match_parent"
+         android:layout_height="wrap_content" />
+
+
+</RelativeLayout>

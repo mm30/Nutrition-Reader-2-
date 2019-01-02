@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Nutrition reader</string>
+    <string name="take_photo_instructions">When you take a picture: \n\n1. Hold the phone steady to reduce blur.\n2. Keep the nutrition label on a flat
+    surface to reduce skew; keep the camera close to parallel to the target image.\n3. Have ample lighting\n4. Hold camera approximately
+    6-8 inches(15-20 cm) from the target</string>
+</resources>
